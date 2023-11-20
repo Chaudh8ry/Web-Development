@@ -1,0 +1,53 @@
+div{
+    width: 70px;
+    height: 70px;
+    background-color: aqua;
+    position: relative;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: 2; /*no. of times animation occur */
+    animation-fill-mode: forwards;
+}
+
+#ease{
+    animation-timing-function: ease;
+}
+#linear{
+    animation-timing-function: linear;
+}
+#ease-in{
+    animation-timing-function: ease-in;
+}
+#ease-in-out{
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes colorchange{
+
+    0%{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: purple;
+        top: 0px;
+        left: 200px;
+    }
+    50%{
+        background-color: aqua;
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color: brown;
+        top: 200px;
+        right: 200px;
+    }
+    100%{
+        background-color: yellow;
+        top: 0px;
+        left: 0px;
+    }
+}

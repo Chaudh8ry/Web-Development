@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice Form</title>
+    </head>
+    <body>
+        <!-- The "method" attribute specifies how to send form-data (the form-data is sent to the page specified in the action attribute) -->
+        <!--The form-data can be sent as URL variables (with method="get")-->
+        <form method="get" target="_blank">
+            <fieldset>
+                <legend>User Registration Form</legend>
+                <!-- Name -->
+                <br><label for="name">Enter Your Name:</label>
+                <input type="text" id="name"><br>
+                
+                <!-- Age -->
+                <br><label for="age">Enter Your Age:</label>
+                <input type="number" id="age"><br>
+
+                <!-- Date Of Birth -->
+                <br><label for="DOB">Enter Your D.O.B:</label>
+                <input type="date" id="DOB"><br>
+
+                <!-- Radio Button -->
+                <br>Select Your Gender:
+                <br><label for="male">Male</label>
+                <input type="radio" name="gender"><br>
+
+                <label for="female">Female</label>
+                <input type="radio" name="gender"><br>
+                
+                <label for="not">Not Disclose</label>
+                <input type="radio" name="gender"><br>
+
+                <!-- CheckBox -->
+                <br>Select Languages You Know:
+
+                <br><label for="C++">C++</label>
+                <input type="checkbox" id="C++"><br>
+
+                <label for="Python">Python</label>
+                <input type="checkbox" id="Python"><br>
+
+                <label for="C">C</label>
+                <input type="checkbox" id="C"><br>
+
+                <!-- Email -->
+                <br><label for="email">Enter Your Email:</label>
+                <input type="email" id="email" placeholder="abc@gmail.com"><br>
+
+                <!-- Password -->
+                <br><label for="pass">Enter Your Password:</label>
+                <input type="password" id="pass"><br>
+                
+                <!-- Adderess Textarea-->
+                <br><label for="add">Enter Your Address</label>
+                <textarea id="add" cols="25" rows="5"></textarea><br>
+
+                <!-- Submit Button -->
+                <br><input type="submit">
+            </fieldset>
+        </form>
+
+        <a href="https://www.w3schools.com/tags/att_form_method.asp" target="_blank">Method Attribute</a>
+
+        <!-- "Value" attribute-->
+        <a href="https://www.w3schools.com/tags/att_input_value.asp" target="_blank">Value Attribute</a>
+
+        <!-- HTTP Method -->
+        <a href="https://www.w3schools.com/tags/ref_httpmethods.asp" target="_blank">HTTP Method</a>
+    </body>
+</html>

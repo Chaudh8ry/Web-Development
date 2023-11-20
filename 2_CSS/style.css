@@ -1,0 +1,14 @@
+p{
+    color: whitesmoke;
+}
+.border{
+    border: solid 10px yellow;
+}
+.heading{
+    text-align: center;
+    size: 40px;
+    text-decoration: underline;
+}
+body {
+    background-color: firebrick;
+}

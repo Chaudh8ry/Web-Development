@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes</title> <!-- pseudo classes can be aplied on any CSS Selector by using ':' after the selector -->
+    <style>
+        .hov:hover{    /* Selects an element when the user hovers over it */
+            background-color: aqua;
+        }
+
+        input:focus{    /* Selects an element when it has focus, such as when an input field is selected */
+            background-color: blanchedalmond;
+           font-size: 25px;
+        }
+
+        .oni:hover{
+            color: pink;
+        }
+
+        .oni:active{  /*Selects an element when it is active, such as when a button is clicked */
+            color: brown;
+        }
+ 
+        /* .oni:visited{  /* Selects a link that has already been visited
+            color: red;
+        } */
+
+        .child:first-child{  /*Selects the first child of an element */
+            color: brown;
+        }
+        /* :last-child - Selects the last child of an element. */
+        /* :nth-child(n) - Selects the nth child of an element. ('n' can be "odd,even,1 2 3 .....,2n+1,2n")*/
+    
+        /* Selects a checkbox or radio button that is checked. */
+        /* :disabled - Selects an element that is disabled */
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Pseuod Classes CSS</h2>
+        <p class="hov">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae quia facere sint odio nisi error pariatur nostrum!</p>
+        <br>
+        <input type="text">
+        <hr>
+        <a class="oni" href="#">bard</a>
+    </div>
+
+    <footer>
+        <p class="child">Thanks For visiting</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, sequi.</p>
+    </footer>
+</body>
+</html>

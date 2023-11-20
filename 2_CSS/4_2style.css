@@ -1,0 +1,46 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+h1{
+    background-color: aqua;
+}
+
+/* Class Selectors */
+.border,.border2{
+    background-color: burlywood;
+    border: solid 5px red;
+}
+
+/* id Selector */
+#id1{
+    color: blue;
+}
+
+/* Descendent Selector */
+main p{
+    font-size: 28px;
+}
+
+/* Child Selector */
+h4 > p{
+    background-color: blueviolet;
+}
+
+/* Adjacent Sibling */
+section + p{
+    color: red;
+}
+
+/* General Sibling */
+section ~ p{
+    color: red;
+}
+
+/* Attribute Selector */
+[href=""]{
+    color: brown;
+}

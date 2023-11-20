@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    border: solid 10px rgb(105, 104, 25);
+    background-color: #3b3b7790;
+}
+
+.box1{
+    width: 160px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 5px;
+    position: relative;
+    animation-name: box1;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes box1{
+    from{
+        left: 0px;
+        top: 0px;
+    }
+    to{
+        left: 910px;
+        top: 0px;
+    }
+}
+
+.box2{
+    width: 160px;
+    height: 50px;
+    background-color: aqua;
+    border-radius: 20px;
+    border: 5px;
+    position: relative;
+    animation-name: box2;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes box2{
+    from{
+        left: 910px;
+        top: 530px;
+    }
+    to{
+        left: 0px;
+        top: 530px;
+    }
+}
+
+.circle{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: solid 5px black;
+    border-radius: 100px;
+    position: relative;
+    animation-name: circle;
+    /* animation-iteration-count: infinite; */
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    top: 160px;
+    left: 650px;
+}
+
+@keyframes circle{
+    0%{
+        top: -56px;
+        left: 0px;
+    }
+    30%{
+        top: -3.5%;
+        left: 95%;
+    }
+    70%{
+        top: 65%;
+        left: 0%;
+    }
+    100%{
+        top: 65%;
+        left: 95%;
+    }
+}

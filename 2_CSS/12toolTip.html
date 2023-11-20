@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool-Tip</title>
+    <style>
+        /* Tooltip container */
+        .tooltip{
+            position: relative;
+            display: inline-block;
+        }
+        /* Tooltip text */
+        .tooltip .tooltiptext{
+            visibility: hidden;
+            width: 200px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 10px;
+
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            left: 50%;
+            margin-left: -60px;            
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip:hover .tooltiptext{
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+     <!-- The span tag does not have any inherent meaning or rendering. It is simply a way to group elements together so that they can be styled or manipulated more easily  -->
+    <div class="tooltip">Mucho Gusto
+        <p class="tooltiptext">Nice to meet you</p> 
+    </div>
+</body>
+</html>

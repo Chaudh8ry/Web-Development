@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <fieldset> <!--This Tag is used to create a box auround the form-->
+                <legend>Personal Details</legend>
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name">
+            <br><br>
+
+            <!-- The "textarea" element is used in forms to collect user review,comments etc. 'Multiline Text'  -->
+            <label for="comments">Please write something in Comment Box:</label>
+            <textarea name="" id="comments" cols="30" rows="10"></textarea>
+
+           <br> <label for="hello"><input type="text" id="hello">Hello</label>
+
+           <br><br><label for="DOB">DOB</label>
+           <input type="date" id="DOB">
+
+           <br><label for="password">Enter Your Password</label>
+           <input type="password" id="password">
+
+           <br><!--Selecting any one (radio attribute)-->
+           Select Your Gender:
+           <br><label for="male">Male</label>
+           <input type="radio" id="male" name="gender">
+           <br><label for="female">Female</label>
+           <input type="radio" id="female" name="gender">
+           <br><label for="not">Not Reveal</label>
+           <input type="radio" id="not" name="gender">
+           <!-- By writing Name attribute same for every input we can choose only one gender -->
+
+           <!-- Checkbox -->
+          <br> Select Movies You Have Watched:
+           <br><label for="Avengers">Avengers</label>
+           <input type="checkbox" id="Avengers">
+           
+           <br><label for="Thor">THOR</label>
+           <input type="checkbox" id="Thor">
+           
+           <br><label for="IronMan">IronMan</label>
+           <input type="checkbox" id="IronMan">
+
+           <!-- Sumit button -->
+           <input type="submit">
+        </fieldset>
+        </form>
+
+    </body>
+</html>

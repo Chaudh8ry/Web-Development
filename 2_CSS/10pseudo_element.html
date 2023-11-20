@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Pseudo-elements are a way to style specific parts of an element without having to create additional elements. They are used in CSS and are denoted by two colons (::) -->
+    <title>Pseudo Elements</title>
+    <style>
+        p::first-line{   /* Styles the first line of a text element */
+            color: blueviolet;
+        }
+         p::before{ /* Inserts content before the content of an element */
+            content: "-Vishal ";
+            color: greenyellow;
+            font-size: 20px;
+        }
+         p::after{  /* Inserts content after the content of an element */
+            content: "-Chaudhary";
+            color: brown;
+            font-size: 20px;
+        }
+        p::selection{  /* Styles the text that is currently selected by the user */
+            background-color: black;
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ducimus architecto ex sequi dignissimos eius ipsam consequatur culpa officia? Autem mollitia voluptatum facilis maiores unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit molestias explicabo rem nesciunt repudiandae! Error minima hic odio, fuga doloremque magnam atque illum voluptates autem veritatis tempora saepe dicta modi.</p>
+</body>
+</html>

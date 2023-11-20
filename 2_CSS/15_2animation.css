@@ -1,0 +1,42 @@
+h1{
+    position: relative;
+    display: flex;
+    font-size: 100px;
+    font-weight: 650px;
+    justify-content: center;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1::after{
+    content: "";
+    position: absolute;
+    width: 1120px;
+    height: 10px;
+    bottom: 0px;
+    background-color: black;
+    left: 0; 
+    visibility: hidden;
+}
+h1:hover::after{
+    animation-name: lineanimation;
+    animation-duration: 2s;
+    visibility: visible;
+}
+@keyframes lineanimation{
+    0%{
+        width: 0%;
+        left: 0%;
+    }
+    50%{
+        width: 100%;
+        left: 0%;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+}
