@@ -9,6 +9,14 @@ h1{
     background-color: aqua;
 }
 
+/* *Selector List */
+/* Selector List : It is a group of selectors separated by commas, used to target multiple elements with the same set of styles.
+    #id1, .border2, p {         
+    background-color: burlywood;
+    border: solid 5px red;
+    }
+*/
+
 /* Class Selectors */
 .border,.border2{
     background-color: burlywood;
@@ -21,26 +29,32 @@ h1{
 }
 
 /* Descendent Selector */
+/* A descendant selector simply uses a space between two element names to select any element that is a descendant of the specified element. This includes the immediate children, grandchildren, great-grandchildren, and so on, down the entire element hierarchy. */
 main p{
     font-size: 28px;
 }
 
 /* Child Selector */
+/* A child selector uses the > symbol to select only the immediate children of a specific element. This means the specified element and the target element must be directly connected in the HTML tree structure. */
 h4 > p{
     background-color: blueviolet;
 }
 
 /* Adjacent Sibling */
+/* The adjacent sibling selector is used to select an element that is directly after another specific element.
+Sibling elements must have the same parent element, and "adjacent" means "immediately following". */
 section + p{
     color: red;
 }
 
 /* General Sibling */
+/* The general sibling selector selects all elements that are next siblings of a specified element */
 section ~ p{
     color: red;
 }
 
 /* Attribute Selector */
+/* The [attribute] selector is used to select elements with a specified attribute. */
 [href=""]{
     color: brown;
 }
