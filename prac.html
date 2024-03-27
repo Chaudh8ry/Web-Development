@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <details>
-        <summary>Hola Amigo</summary>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, atque ad. Expedita commodi earum modi?
-    </details>
-</body>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Enter Your Details</legend>
+            
+            <label for="name">Enter Your Name: </label>
+            <input type="text" id="name"> <br><br>
+
+            <label for="age">Enter Age: </label>
+            <input type="text" id="age"> <br><br>
+
+            <label for="dob">Date of Birth: </label>
+            <input type="text" id="dob"> <br><br>
+
+            Select Your Gender: <br>
+            <label for="male">Male : </label> 
+            <input type="radio" name="mf" id="male" value="gender"> <br>
+            <label for="female">Female : </label>
+            <input type="radio" name="mf" id="female" value="gender"><br><br>
+
+            Select Tech Stack: <br>
+            <label for="">C++</label>
+            <input type="checkbox"><br>
+            <label for="">PYTHON</label>
+            <input type="checkbox"><br>
+            <label for="">JavaScript</label>
+            <input type="checkbox"><br><br>
+
+            <label for="email">Enter Email: </label>
+            <input type="email" name="" id="email" placeholder="abc@email.com"><br><br>
+
+            <label for="address">Enter Your Address: </label>
+            <textarea name="" id="address" cols="30" rows="10"></textarea><br><br>
+
+            <label for="country">Country: </label>
+            <input type="text" id="country" placeholder="Currently Unavailable" readonly disabled><br><br>
+
+           <center> <input type="submit" value="submit" style="background-color: darkgrey;"> </center>
+        </fieldset>
+    </body>
 </html>

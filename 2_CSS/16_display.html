@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        p {
+            display: inline;
+        }
+        span {
+            display: block;
+        }
+        .in-blck{
+            display: inline-block;
+            width: 200px;
+        }    
+    </style>
+</head>
+<body>
+    
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, minima.
+    </p>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    </p><br><br>
+
+    <span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, explicabo at.
+    </span>
+    <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, cumque facilis.
+    </span><br><br>
+
+    <p class="in-blck">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, fugiat aliquam et repellat sapiente maxime!
+    </p>
+    <span class="in-blck">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo consectetur odit tempora ipsa libero doloremque?
+    </span>
+</body>
+</html>
+
+    <!-- Display: inline-block; -->
+<!-- It allows an element to behave like an inline element (meaning it can sit next to other elements on the same line), while also having the ability to take up space like a block element.
+
+*Key differences compared to other display values:
+
+-> Width and Height: You can set a specific width and height for an element with display: inline-block.
+-> Margins and Paddings: Top and bottom margins/paddings are respected (unlike with display: inline).
+-> No Line Breaks: Unlike display: block, it doesn’t add a line break after the element. -->
