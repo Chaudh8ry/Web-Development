@@ -1,0 +1,63 @@
+body {
+    background-color: red;
+}
+
+div {
+    font-size: x-large;
+    text-align: center;
+}
+
+div::after {
+    content: "Welcome to demo lecture of Media Query";
+}
+
+@media (min-width: 750px) {
+    body {
+        background-color: purple;
+    }
+
+    div::after {
+        content: "colour change ho gya";
+    }
+}
+
+@media (min-width: 900px) {
+
+    /* if viewport is atleast 900px then this style will apply */
+    body {
+        background-color: aquamarine;
+    }
+
+    div::after {
+        content: "Yeah its Working";
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-color: white;
+    }
+
+    div::after {
+        content: "Hola Amigo";
+    }
+}
+
+@media (min-width: 200px) and (max-width: 350px) {
+    body {
+        background-color: black;
+    }
+
+    div::after {
+        content: "Mucho Gusto";
+    }
+}
+
+@media (50px <= width <= 150px){
+    body{
+        background-color: yellow;
+    }
+    div::after{
+        content: 'hiiiiiiiiiii';
+    }
+}

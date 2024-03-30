@@ -1,0 +1,54 @@
+div{
+    font-size: xx-large;
+    text-align: center; 
+}
+
+/* Extra Small Device (phones, 600px and below) */
+@media (max-width: 600px){
+    body{
+        background-color: yellow;
+    }
+    div::after{
+        content: 'SmartPhones';
+    }
+}
+
+/* Small Devices (portrait tablet and Large Phones, 600px and up) */
+@media (min-width: 600px){
+    body{
+        background-color: aqua;
+    }
+    div::after{
+        content: 'Portrait Tablets';
+    }
+}
+
+/* Medium Devices (landscape tablets ,768px and up) */
+@media (min-width: 768px){
+    body{
+        background-color: blue;
+    }
+    div::after{
+        content: 'Landscape Tablet';
+    }
+}
+
+/* Large Device (Laptop/Desktop, 992px and up) */
+@media (min-width: 992px){
+    body{
+        background-color: brown;
+    }
+    div::after{
+        content: 'Laptop/Desktop';
+    }
+}
+
+/* Extra Large Devices (Large Laptops, 1200px and up) */
+@media (min-width: 1200px){
+    body{
+        background-color: bisque;
+    }
+    div::after{
+        content: 'Extra Large Laptops';
+    }
+}
