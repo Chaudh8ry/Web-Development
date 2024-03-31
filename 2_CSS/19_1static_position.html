@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Z-Index</title>
+    <title>Static Position</title>
+    <!-- Static positioning is the default that every element gets. It just means "put the element into its normal position in the document flow — nothing special to see here." -->
+    <!-- HTML elements are positioned static by default.
+    Static positioned elements are not affected by the top, bottom, left, and right properties. -->
     <style>
+        main{
+            border: 5px solid black;
+        }
         .box{
-            width: 100px;
             height: 100px;
+            width: 100px;
         }
         .box1{
             border: 2px solid black;
@@ -15,23 +21,20 @@
         }
         .box2{
             border: 2px solid black;
-            position: absolute;
-            top: 50px;
-            left: 40px;
             background-color: yellow;
-            z-index: -1;    
         }
-        
         .box3{
             border: 2px solid black;
             background-color: aqua;
         }
-        
+
     </style>
 </head>
 <body>
+    <main>
     <div class="box box1"></div>
     <div class="box box2"></div>
     <div class="box box3"></div>
+    </main>
 </body>
 </html>
