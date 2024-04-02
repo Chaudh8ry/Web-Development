@@ -1,0 +1,59 @@
+<!-- 
+    The justify-content property in CSS is used in Flexbox layouts to align flex items along the main axis of the flex container. It controls the alignment of flex items when there is extra space in the flex container along the main axis.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content</title>
+    <style>
+        .container{ 
+            display: flex;
+            border: 5px solid red;
+            justify-content: center;
+            /* justify-content: start;
+            justify-content: end;
+            justify-content: space-between;
+            justify-content: space-around;
+            justify-content: space-evenly; */
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        .box3{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>
+<!--
+    flex-start: Flex items are packed toward the start of the main axis.
+    
+    flex-end: Flex items are packed toward the end of the main axis.
+    
+    center: Flex items are packed at the center of the main axis.
+    
+    space-between: Flex items are evenly distributed along the main axis with the first item aligning to the start of the container and the last item aligning to the end of the container, and any extra space is evenly distributed between the items.
+    
+    space-around: Flex items are evenly distributed along the main axis with equal space around them, resulting in half-sized spaces on the ends.
+   
+    space-evenly: Flex items are evenly distributed along the main axis with equal space around them, including at the ends.
+-->

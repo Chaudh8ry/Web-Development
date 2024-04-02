@@ -1,0 +1,47 @@
+<!-- flex-basis: This property specifies the initial size of the flex item along the main axis before the remaining space is distributed. It can be a length (e.g., pixels) or a percentage. By default, it's set to auto, which means the item's size is determined by its content.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Self</title>
+    <style>
+        .container{
+            display: flex;
+            height: 560px;
+            border: 5px solid red;
+        }
+        .box{
+            width: 350px;
+            height: 150px;
+        }
+        .box1{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: yellow;
+            border: 3px solid black;
+            flex-basis: 100px;
+            /* flex: This is a shorthand property that combines flex-grow, flex-shrink, and flex-basis in one declaration. The values are in the order of flex-grow, flex-shrink, and flex-basis. For example, flex: 1 0 auto; means the item can grow, won't shrink, and its initial size is determined by its content. */
+        }
+        .box3{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+        .box4{
+            background-color: brown;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>
+

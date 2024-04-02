@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Direction</title>
+    <style>
+        /* The flex-direction property in CSS is used in Flexbox layouts to define the direction in which flex items are placed in a flex container. It specifies whether the flex items are laid out in a row or a column, and whether they are laid out in the normal direction or the reversed direction. */
+        .container{ 
+            display: flex;
+            border: 5px solid red;
+            /* 4 Types */
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row; */
+            flex-direction: row-reverse;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        .box3{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>
+
+<!-- 
+    *row: This is the default value. Flex items are laid out horizontally in the same direction as the block axis of the container's writing mode.
+    *row-reverse: Flex items are laid out horizontally but in the opposite direction of the block axis.
+    *column: Flex items are laid out vertically in the same direction as the block axis.
+    *column-reverse: Flex items are laid out vertically but in the opposite direction of the block axis.
+ -->

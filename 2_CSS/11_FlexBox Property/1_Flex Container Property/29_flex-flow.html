@@ -1,0 +1,41 @@
+<!-- Flex-Flow is actually a shorthand property combining both flex-direction and flex-wrap
+    The flex-flow property allows you to set the direction and wrapping behavior of flex items within a flex container in a single declaration.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Flow</title>
+    <style>
+      .container{
+        display: flex;
+        border: 5px solid red;
+        /* <!-- Syntax => flex-flow: <flex-direction>  <flex-wrap>;--> */
+        flex-flow: row-reverse wrap;
+      }
+      .box {
+        width: 150px;
+        height: 150px;
+      }
+      .box1 {
+        background-color: red;
+        border: 3px solid black;
+      }
+      .box2 {
+        background-color: yellow;
+        border: 3px solid black;
+      }
+      .box3 {
+        background-color: aqua;
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1">Box 1</div>
+      <div class="box box2">Box 2</div>
+      <div class="box box3">Box 3</div>
+    </div>
+  </body>
+</html>

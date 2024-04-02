@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Wrap</title>
+    <style>
+        /* The flex-wrap property in CSS is used in Flexbox layouts to specify whether flex items are allowed to wrap onto multiple lines within a flex container. It determines whether flex items should wrap along the main axis if there isn't enough space for them within a single line. */
+        /* 
+        nowrap: This is the default value. Flex items are laid out in a single line. The flex container will try to fit all items onto one line even if it means overflowing the container.
+        
+        wrap: Flex items are laid out in multiple lines if needed, and any overflow occurs in the direction of the cross axis.
+        
+        wrap-reverse: Flex items are laid out in multiple lines in the opposite direction of the cross axis.*/
+        .container{ 
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-wrap: nowrap; */
+            /* flex-wrap: wrap-reverse; */
+            border: 5px solid red; 
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        .box3{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+        .box4{
+            background-color: brown;
+            border: 3px solid black;
+        }
+        .box5{
+            background-color: purple;
+            border: 3px solid black;
+        }
+        .box6{
+            background-color: green;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+        <div class="box box5">Box 5</div>
+        <div class="box box6">Box 6</div>
+    </div>
+</body>
+</html>

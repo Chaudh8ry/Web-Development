@@ -1,0 +1,45 @@
+<!-- *Flexbox is a one-dimensional layout method for arranging items in rows or columns.--> 
+<!-- When using Flexbox, you need to create a parent element (also known as the flex container) to apply the flex layout. -->
+<!-- 'X-axis' is Main Axis 
+     'Y-axis' is Cross Axis  
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        /* Adding a display value of flex to an element makes it a flex container. The container is displayed as Block-level content */
+        .container{
+            display: flex; 
+            border: 5px solid red;
+        }
+
+        /* Flex Items */
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        .box3{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  <!--Parent Element (Flex Container)-->
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>

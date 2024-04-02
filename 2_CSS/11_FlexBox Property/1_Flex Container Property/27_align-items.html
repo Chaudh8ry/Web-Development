@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The align-items property in CSS is used in Flexbox layouts to align flex items along the cross axis of the flex container. It controls the alignment of flex items when they don't take up all the available space along the cross axis. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Direction</title>
+    <style>
+        .container{ 
+            display: flex;
+            height: 160px;
+            border: 5px solid red;
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            align-items: stretch;
+            gap: 150px;
+            /* align-items: baseline; */
+        }
+        /* .box{ 
+             width: 150px;
+            height: 150px;
+        } */
+        .box1{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: yellow;
+            border: 3px solid black;
+        }
+        .box3{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>
+<!-- 
+    stretch: This is the default value. Flex items are stretched to fill the container along the cross-axis.
+    
+    flex-start: Flex items are aligned at the start of the cross axis.
+    
+    flex-end: Flex items are aligned at the end of the cross axis.
+    
+    center: Flex items are aligned at the center of the cross axis.
+    
+    baseline: Flex items are aligned such that their baselines align.
+ -->

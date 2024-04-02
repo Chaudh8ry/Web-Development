@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- flex-grow: This property specifies how much a flex item will grow relative to the other flex items when there's extra space along the main axis. It takes a unitless value which represents the proportion of the available space that the item should take up. By default, it's set to 0, meaning the item won't grow. -->
+    <title>Flex Grow</title>
+    <style>
+        .container{
+            display: flex;
+            border: 5px solid red;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+        .box1{
+            background-color: red;
+            border: 3px solid black;
+        }
+        .box2{
+            background-color: yellow;
+            border: 3px solid black;
+            flex-grow: 2;
+        }
+        .box3{
+            background-color: aqua;
+            border: 3px solid black;
+        }
+        .box4{
+            background-color: brown;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</body>
+</html>
