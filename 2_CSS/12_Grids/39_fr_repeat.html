@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fr Unit and Repeat</title>
+    <!-- The fr unit distributes available space, not all space. Therefore, if one of your tracks has something large inside it, there will be less free space to share. -->
+    <style>
+      .container {
+        display: grid;
+        /* minmax() -> 'minimum size of 100px' and 'maximum size of 3fr'  */
+        grid-template-columns: 1fr minmax(100px,3fr) 1fr;
+        /* the repeat() function is used to specify repetitive patterns of column or row sizes within the grid-template-columns or grid-template-rows property. It allows you to define a pattern once and repeat it a specified number of times.*/
+        grid-template-rows: repeat(2,100px);
+      }
+      .item {
+        border-radius: 5px;
+        padding: 10px;
+        background-color: rgb(207 232 220);
+        border: 2px solid rgb(79 185 227);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+    </div>
+  </body>
+</html>

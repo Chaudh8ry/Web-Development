@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album using CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            margin: 1em;
+            height: 760px;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+            /* gap: 1em; */
+            grid-template-areas: 
+            'h h h h h'
+            'a a A A A'
+            'a a A A A'
+            'a a A A A'
+            'f f f f f';
+        }
+        .box{
+            margin: 1em;
+        }
+        .box1{
+            background-color: aqua;
+            border: 2px solid black;
+            grid-area: 1/1/6/-1;
+        }
+        .box2{
+            background-color: red;
+            border: 2px solid black;
+            grid-area: h;
+        }
+        .box3{
+            background-color: yellow;
+            border: 2px solid black;
+            grid-area: a;
+        }
+        .box4{
+            background-color: black;
+            border: 2px solid black;
+            grid-area: A;
+        }
+        .box5{
+            background-color: green;
+            border: 2px solid black;
+            grid-area: f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box box2">Header</div>
+        <div class="box box3">Aside</div>
+        <div class="box box4">Article</div>
+        <div class="box box5">Footer</div>
+    </div>
+</body>
+</html>

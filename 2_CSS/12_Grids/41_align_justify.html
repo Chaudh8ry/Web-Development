@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the justify-content and align-content properties are used to align the grid container's content within the grid container's space, both horizontally and vertically. -->
+    <title>Align Items & Justify Items - CSS Grid</title>
+    <!-- 'Justify' for 'Left and Right' -->
+    <!-- 'Align' for 'Up and Down'-->
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 150px 150px;
+            grid-gap: 10px;
+            max-width: 960px;
+            margin: 0 auto;
+            /* align-items: start;
+            justify-items: start; */
+        }
+        .container div{
+            background-color: #3bbced;
+            padding: 30px;
+        }
+        .container div:nth-child(even){
+            background-color: #777;
+        }
+        .one{
+            justify-self: end; /* justify-self: This property aligns a grid item along the row axis (horizontally) within its grid cell. */
+            align-self: end; /* align-self: This property aligns a grid item along the column axis (vertically) within its grid cell. */
+        }
+        .two{
+            justify-self: center;
+            align-self: center;
+        }
+        .three{
+            justify-self: start;
+            align-self: start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+</body>
+</html>
+<!-- justify-content: This property is used to align grid items along the row axis (horizontally). It works similarly to justify-content in Flexbox.
+
+justify-content: start: Items are packed toward the start of the grid container.
+justify-content: end: Items are packed toward the end of the grid container.
+justify-content: center: Items are centered within the grid container.
+justify-content: space-between: Items are evenly distributed in the grid container; the first item is at the start, the last item is at the end.
+justify-content: space-around: Items are evenly distributed in the grid container with equal space around them.
+justify-content: space-evenly: Items are evenly distributed in the grid container with equal space around them, including space before the first item and after the last item. -->
+
+<!-- align-content: This property is used to align grid items along the column axis (vertically).
+
+align-content: start: Lines are packed toward the start of the grid container.
+align-content: end: Lines are packed toward the end of the grid container.
+align-content: center: Lines are centered within the grid container.
+align-content: space-between: Lines are evenly distributed in the grid container; the first line is at the start, the last line is at the end.
+align-content: space-around: Lines are evenly distributed in the grid container with equal space around them.
+align-content: stretch: Lines stretch to take up the remaining space. -->
