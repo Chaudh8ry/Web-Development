@@ -117,8 +117,8 @@ header{
 }
 
 .card img{
-    height: 400px;
-    width: 366px;
+    height: 350px;
+    width: 346px;
     border-radius: 20px;
 }
 
@@ -158,3 +158,199 @@ header{
     margin-top: 160px;
 }
 
+/* Features Section */
+.feature-section{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-section img:first-child{
+    height: 450px;
+    width: 600px;
+    border-radius: 30px;
+}
+.feature-section img:nth-child(2){
+    height: 350px;
+    width: 400px;
+    border-radius: 30px;
+}
+
+.first-feature-section img:first-child{
+    position: absolute;
+    left: -5px;
+    z-index: -1;
+}
+
+.first-feature-section img:nth-child(2){
+    position: relative;
+    left: 124px;
+}
+
+.feature-section div{
+    width: 50%;
+}
+
+/* designing the second div of feature box */
+.feature-section h1{
+    font-weight: 800;
+    font-size: 60px;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+}
+
+.feature-section p{
+    font-weight: 500;
+    font-size: 18px;
+    color: #585c65;
+    margin-bottom: 40px;
+    max-width: 80%;
+}
+
+.features-section button{
+    font-weight: 700;
+}
+  
+
+.feature-section div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-section div:last-child h1,p,button{
+    align-self: flex-start;
+}
+
+/* Deisgning the second feature section */
+.second-feature-section{
+    flex-direction: row-reverse;
+}
+
+.second-feature-section div:last-child{
+    margin-left: 130px;
+}
+
+
+/* Images of Second Feature Section*/
+.second-feature-section div:first-child img:first-child{
+    position: absolute;
+    right: 1px;
+}
+.second-feature-section div:first-child img:last-child{
+    position: relative;
+    right: -91px;
+}
+
+/* Designing NewsLetter Section */
+.newsletter{
+    display: flex;
+    margin: 150px 120px;
+    background: #6663e9;
+    border-radius: 70px;
+    padding: 60px 5px;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.newsletter .cntent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.newsletter div:first-child h1{
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.newsletter div:first-child p{
+    color: #ffffff;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 400;
+    width: 55%;
+}
+
+/* Form */
+.newsletter form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}  
+
+.newsletter form button{
+    color: #6663e9;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter form div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #5654d1;
+    border-radius: 40px;
+    width: 470px;  
+    height: 61px;
+    gap: 10px;
+    padding: 0 30px;
+}
+  
+.newsletter form input {
+    background-color: transparent;
+    border: none;
+}
+
+/* designning Footer Area */
+footer{
+    display: flex;
+    align-items: flex-start;
+    margin: -20px 100px 80px 100px;
+    justify-content: space-between;
+}
+
+footer div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer div:first-child img {
+    width: 150px;
+  }
+  
+  footer div:first-child div img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+footer div:first-child div p{
+    width: 323px;
+    margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer-link-content a{
+    color: black;
+}
+
+.footer-link-content ul li:first-child{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.footer-link-content ul li{
+    line-height: 42px;
+}
